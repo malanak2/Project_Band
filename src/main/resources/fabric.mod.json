@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "projectband",
+  "version": "${version}",
+
+  "name": "Project BAND",
+  "description": "Welcome to the BAND project! This is WIP mod with WIP description",
+  "authors": [
+    "malanak"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/projectband/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.malanak.projectband.ProjectBand"
+    ],
+    "client": [
+      "com.malanak.projectband.ProjectBandClient"
+    ]
+  },
+  "mixins": [
+    "projectBand.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
